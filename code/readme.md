@@ -3,6 +3,7 @@
 
 
 Esta API REST permite ao usuário enviar textos de entrada e gera como resultado o vucabulário formado pelas palavras dos textos (ignorando repetições, case, pontuação e palavras que não agragam valor ao vacabulário do texto chamadas *stopwords*) e um vetor de repetição que conta quantas vezes cada termo daquele vocabulário aparece no texto. Considera os seguintes cenários:\
+
 **1. o vocabulário é composto de palavras isoladas;**\
 Exemplo:\
 texto1: “Falar é fácil. Mostre-me o código.”\
