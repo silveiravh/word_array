@@ -22,7 +22,7 @@ Vocabulário:
 11. funcione\
 Vetor de repetição:\
 texto1: [1,1,1,1,1,1,1,0,0,0,0]\
-texto2: [0,2,1,0,0,0,2,2,1,1,1]\
+texto2: [0,2,1,0,0,0,2,2,1,1,1]
 
 **2. o vocabulário é composto de grupos de duas palavras em sequência (2-gram);**
 Exemplo:\
@@ -42,7 +42,8 @@ Considerando os mesmos textos 1 e 2, o vocabulário seria:
 13. que funcione\
 Vetor de repetição:\
 texto1: [1,1,1,1,1,1,0,0,0,0,0,0,0]\
-texto2: [0,1,0,0,0,0,1,2,1,1,1,1,1]\
+texto2: [0,1,0,0,0,0,1,2,1,1,1,1,1]
+
 e assim por diante (podendo trabalhar com sequências n-gram sendo n um número natural inteiro diferente de zero).
 
 **Envio de textos**
