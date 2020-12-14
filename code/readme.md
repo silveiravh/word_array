@@ -15,7 +15,7 @@ e assim por diante (podendo trabalhar com sequências n-gram sendo n um número 
     "content": "Falar é fácil. Mostre-me o código."
 }
 ```
-sendo 'id' o identificador único do texto e 'content' seu conteúdo. O texto será enviado utilizando o seguinte método:
+sendo 'id' o identificador único do texto e 'content' seu conteúdo. O texto será enviado utilizando o seguinte método:\
 POST host:port/text
 com o body da requisição sendo como descrito acima.
 
