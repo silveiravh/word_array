@@ -65,14 +65,14 @@ com o body da requisição sendo como descrito acima.
 
 **Vocabulário n-gram**
 
-O usuário poderá solicitar o vocabulário n-gram através do seguinte método:\
+O usuário poderá solicitar o vocabulário n-gram através do seguinte método:
 - GET host:port/vocabulary/\<int:gram\>
 
 sendo gram um inteiro positivo diferente de zero que define como as palavras serão agregadas no vocabulário.
 
 **Vetores de repetições para os textos**
 
-O usuário poderá solicitar os vetores de repetições para os textos considerando um vocabulário n-gram através do seguinte método:\
+O usuário poderá solicitar os vetores de repetições para os textos considerando um vocabulário n-gram através do seguinte método:
 - GET host:port/wordfrequency/\<int:gram\>
 
 sendo gram um inteiro positivo diferente de zero que define como as palavras serão agregadas no vocabulário.
