@@ -1,6 +1,7 @@
 **Linguagem de Programação Utilizada**
 - Python 3.9.0 (necessário instalar biblioteca Flask-RESTful através do comando 'pip install Flask-RESTful')
 
+**A Postman Collection presente no repositório permite testar a API**
 
 Esta API REST permite ao usuário enviar textos de entrada e gera como resultado o vucabulário formado pelas palavras dos textos (ignorando repetições, case, pontuação e palavras que não agragam valor ao vacabulário do texto chamadas *stopwords*) e um vetor de repetição que conta quantas vezes cada termo daquele vocabulário aparece no texto. Considera os seguintes cenários:\
 
@@ -62,6 +63,11 @@ com o body da requisição sendo como descrito acima.
 
 
 **Vocabulário n-gram**
-- O usuário poderar solicitar o vocabulário n-gram através do seguinte método:\
+- O usuário poderá solicitar o vocabulário n-gram através do seguinte método:\
 GET host:port/vocabulary/<int:gram>\
-sendo gram um inteiro que define como as palavras serão agregadas no 
+sendo gram um inteiro positivo diferente de zero que define como as palavras serão agregadas no vocabulário.
+
+**Vetores de repetições para os textos**
+- O usuário poderá solicitar os vetores de repetições para os textos considerando um vocabulário n-gram através do seguinte método:\
+GET host:port/wordfrequency/<int:gram>\
+sendo gram um inteiro positivo diferente de zero que define como as palavras serão agregadas no vocabulário.
