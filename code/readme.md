@@ -8,10 +8,14 @@ Esta API REST permite ao usuário enviar textos de entrada e gera como resultado
 e assim por diante (podendo trabalhar com sequências n-gram sendo n um número natural inteiro diferente de zero).
 
 **Envio de textos**
-Para testar a API nessa versão inicial o envio de textos deve ser feito no formato JSON:
+- Para testar a API nessa versão inicial o envio de textos deve ser feito no formato JSON:
 ```json
 {
     "id": 1,
     "content": "Falar é fácil. Mostre-me o código."
 }
 ```
+sendo 'id' o identificador único do texto e 'content' seu conteúdo. O texto será enviado utilizando o seguinte método:
+POST host:port/text
+com o body da requisição sendo como descrito acima.
+
