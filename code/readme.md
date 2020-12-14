@@ -7,35 +7,35 @@ Esta API REST permite ao usuário enviar textos de entrada e gera como resultado
 Exemplo:\
 texto1: “Falar é fácil. Mostre-me o código.”\
 texto2: “É fácil escrever código. Difícil é escrever código que funcione.”\
-Vocabulário:\
-1. falar\
-2. é\
-3. fácil\
-4. mostre\
-5. me\
-6. o\
-7. código\
-8. escrever\
-9. difícil\
-10. que\
-11. funcione\
+Vocabulário:
+1. falar
+2. é
+3. fácil
+4. mostre
+5. me
+6. o
+7. código
+8. escrever
+9. difícil
+10. que
+11. funcione
 
 **2. o vocabulário é composto de grupos de duas palavras em sequência (2-gram);**
 Exemplo:\
 Considerando os mesmos textos 1 e 2, o vocabulário seria:
-1. falar é\
-2. é fácil\
-3. fácil mostre\
-4. mostre me\
-5. me o\
-6. o código\
-7. fácil escrever\
-8. escrever código\
-9. código difícil\
-10. difícil é\
-11. é escrever\
-12. código que\
-13. que funcione\
+1. falar é
+2. é fácil
+3. fácil mostre
+4. mostre me
+5. me o
+6. o código
+7. fácil escrever
+8. escrever código
+9. código difícil
+10. difícil é
+11. é escrever
+12. código que
+13. que funcione
 
 e assim por diante (podendo trabalhar com sequências n-gram sendo n um número natural inteiro diferente de zero).
 
