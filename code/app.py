@@ -26,7 +26,7 @@ class Vocabulary(Resource):
         word_list = []
         for text in texts:
             word_list.extend(ngrams(text['content']
-            .lower() # transforme tudo em lowercase para desconsiderar o cade
+            .lower() # transforma tudo em lowercase para desconsiderar o case
             .replace('-', ' ') # substitui '-' por ' ' para considerar duas palavras no caso de palavras compostas (ex. mostre-me será 'mostre' e 'me' separadamente)
             .split(), gram)) # aplica o n-gram conforme o valor de gram passado na request
         word_list = [' '.join(word) for word in word_list] # transforma de tuple para list
