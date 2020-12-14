@@ -20,6 +20,9 @@ Vocabulário:
 9. difícil
 10. que
 11. funcione
+Vetor de repetição:
+texto1: [1,1,1,1,1,1,1,0,0,0,0]
+texto2: [0,2,1,0,0,0,2,2,1,1,1]
 
 **2. o vocabulário é composto de grupos de duas palavras em sequência (2-gram);**
 Exemplo:\
@@ -37,7 +40,9 @@ Considerando os mesmos textos 1 e 2, o vocabulário seria:
 11. é escrever
 12. código que
 13. que funcione
-
+Vetor de repetição:
+texto1: [1,1,1,1,1,1,0,0,0,0,0,0,0]
+texto2: [0,1,0,0,0,0,1,2,1,1,1,1,1]
 e assim por diante (podendo trabalhar com sequências n-gram sendo n um número natural inteiro diferente de zero).
 
 **Envio de textos**
@@ -54,4 +59,6 @@ com o body da requisição sendo como descrito acima.
 
 
 **Vocabulário n-gram**
-- O usuário poderar solicitar o vocabulário 
+- O usuário poderar solicitar o vocabulário n-gram através do seguinte método:\
+GET host:port/vocabulary/<int:gram>\
+sendo gram um inteiro que define como as palavras serão agregadas no 
